@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container
+{
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    background: linear-gradient(to bottom, darkblue, lightblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.container h1{
+    font-family: "San";
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.quote-container
+{
+    position: relative;
+    width: 500px;
+    max-width: fit-content;
+    background-color: white;
+    color: #000;
+    border: 2px solid #02abec;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    
+}
+.quote-container .title{
+    font-size: 20px;
+    color: #1b2845;
+}
+.quote-container .line-break{
+    background: #1b2845;
+    width: 60%;
+    height: 3px;
+}
+.quote-container .quote{
+    font-size: 20px;
+    padding: 20px 0px 8px;
+    display: flex;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+.quote-container #author{
+    
+    padding-bottom: 10px;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.buttons .btn{
+    display: inline-block;
+    width: 140px;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #02abec;
+    border-radius: 30px;
+    padding: 8px 6px;
+    margin: 10px 6px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.buttons .btn-copy
+{
+    background-color: navy;
+    
+}
+.buttons .btn-repeat
+{
+    color: #000;
+    
+}
+.buttons .btn-repeat:hover
+{
+    background-color: navy;
+    color: white;
+}
+#double{
+    padding: 0px 20px;
+}
+
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    
+    .container h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    .quote-container {
+        width: 90%;
+        max-width: 300px;
+        padding: 15px;
+        margin: 0 auto;
+        border-radius: 15px;
+        top: 0;
+        left: 0;
+    }
+
+    .quote-container .quote {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .quote-container #author {
+        font-size: 14px;
+    }
+
+    .buttons .btn {
+        width: 100%;
+        max-width: 140px;
+        font-size: 12px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .container h1 {
+        font-size: 10px;
+    }
+
+    .quote-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .quote-container .quote {
+        font-size: 12px;
+    }
+
+    .quote-container #author {
+        font-size: 12px;
+    }
+
+    .buttons .btn {
+        width: 90px;
+        font-size: 10px;
+    }
+}
