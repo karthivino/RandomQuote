@@ -10,7 +10,7 @@
 .container
 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 30px;
     background: linear-gradient(to bottom, darkblue, lightblue);
     display: flex;
@@ -19,15 +19,15 @@
     gap: 50px;
 }
 .container h1{
-    font-family: "San";
+    font-family: "Poppins", sans-serif;
     font-weight: bolder;
     font-size: 3rem;
 }
 .quote-container
 {
     position: relative;
-    width: 500px;
-    max-width: fit-content;
+    width: 100%;
+    max-width: 500px;
     background-color: white;
     color: #000;
     border: 2px solid #02abec;
