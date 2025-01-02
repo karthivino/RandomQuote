@@ -23,7 +23,7 @@ body{
     gap: 50px;
 }
 .container h1{
-    margin-left: 10px;
+    margin-left: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: bolder;
     font-size: 3rem;
@@ -43,7 +43,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-right: 10px;
+    margin-right:20px;
    
     
 }
@@ -122,7 +122,7 @@ body{
     
     .container h1 {
         position: absolute;
-        top: 10%;
+        top: 5%;
         font-size: 24px;
         text-align: center;
         margin-bottom: 10px;
@@ -156,14 +156,38 @@ body{
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width :  550px) {
+    .quote-container {
+        width: 100%;
+        padding: 10px;
+        position: absolute;
+        top: 20%;
+        left:20%
+    }
     .container h1 {
-        font-size: 30px;
+        font-size: 20px;
+        position: absolute;
+        top: 5%;
+        left: 33%;
+    }
+    
+
+}
+
+@media (max-width: 400px) {
+    .container h1 {
+        font-size: 20px;
+        position: absolute;
+        top: 5%;
+        left: 30%;
     }
 
     .quote-container {
         width: 100%;
         padding: 10px;
+        position: absolute;
+        top: 20%;
+        left: 12%
     }
 
     .quote-container .quote {
